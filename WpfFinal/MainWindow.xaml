@@ -12,6 +12,9 @@
     <!--Ввод ресурсов окна для 3 видов кнопок-->
     <Window.Resources>
         <Style x:Key="RoundButton" TargetType="Button">
+            <EventSetter Event="MouseEnter" Handler="Mouse_Enter"/>
+            <EventSetter Event="MouseLeave" Handler="Mouse_Leave"/>
+            
             <Setter Property="Width" Value="25"/>
             <Setter Property="Height" Value="25"/>
             <Setter Property="Template">
@@ -27,6 +30,9 @@
             </Setter>
         </Style>
         <Style x:Key="RoundButton1" TargetType="Button">
+            <EventSetter Event="MouseEnter" Handler="Mouse_Enter"/>
+            <EventSetter Event="MouseLeave" Handler="Mouse_Leave"/>
+            
             <Setter Property="Width" Value="25"/>
             <Setter Property="Height" Value="25"/>
             <Setter Property="Template">
@@ -42,6 +48,9 @@
             </Setter>
         </Style>
         <Style x:Key="RoundButton2" TargetType="Button">
+            <EventSetter Event="MouseEnter" Handler="Mouse_Enter"/>
+            <EventSetter Event="MouseLeave" Handler="Mouse_Leave"/>
+            
             <Setter Property="Width" Value="25"/>
             <Setter Property="Height" Value="25"/>
             <Setter Property="Template">
@@ -112,7 +121,7 @@
                 Width="75" Height="75" FontSize="40" Foreground="AntiqueWhite">/</Button>
         <Button Grid.Row="6" Grid.Column="0" Style="{StaticResource RoundButton}" 
                 Width="75" Height="75" Foreground="AntiqueWhite" FontSize="30" 
-                Click="Button_Click" >Off</Button>
+                Click="Button_Click">Off</Button>
         <Button Grid.Row="6" Grid.Column="1" Style="{StaticResource RoundButton}" 
                 Width="75" Height="75" Foreground="AntiqueWhite" FontSize="40" >0</Button>
         <Button Grid.Row="6" Grid.Column="2" Style="{StaticResource RoundButton}" 

@@ -65,5 +65,15 @@ namespace WpfFinal
         {
             Close();
         }
+
+        private void Mouse_Enter(object sender, MouseEventArgs e)
+        {
+            ((Button)sender).Background = new SolidColorBrush(Colors.LightBlue);
+        }
+
+        private void Mouse_Leave(object sender, MouseEventArgs e)
+        {
+            ((Button)sender).Background = null;
+        }
     }
 }
